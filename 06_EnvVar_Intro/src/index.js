@@ -9,7 +9,7 @@ const users = [];
 app.use(parser.json());
 
 app.get('/', (req, res) => {
-  res.send('Hi .. running Hello World!');
+  res.send('Hello from ' + process.env.APP_NAME + ' running on port ' + port);
 });
 
 

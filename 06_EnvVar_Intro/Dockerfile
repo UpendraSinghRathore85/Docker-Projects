@@ -12,5 +12,6 @@ RUN npm ci
 COPY . .
 
 ENV PORT=5000
+ENV APP_NAME="my express app"
 
-CMD [ "node", "src/index.js" ]  
+CMD [ "node", "src/index.js" ]
